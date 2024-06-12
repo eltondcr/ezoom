@@ -34,8 +34,8 @@ Clone o repositório do projeto para o seu ambiente local:
 
 bash
 Copiar código
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/eltondcr/ezoom.git
+cd ezoom
 4. Instalando Dependências
 Dentro do diretório do projeto, instale as dependências necessárias:
 
