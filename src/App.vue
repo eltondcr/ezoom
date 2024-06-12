@@ -26,6 +26,7 @@
         </ion-content>
       </ion-menu>
       <ion-router-outlet id="main-content"></ion-router-outlet>
+      <!-- <router-view  id="main-content"></router-view> -->
     </ion-split-pane>
   </ion-app>
 </template>
@@ -66,43 +67,43 @@ import {
 const selectedIndex = ref(0);
 const appPages = [
   {
-    title: 'Inbox',
-    url: '/folder/Inbox',
+    title: 'Home',
+    url: '/home',
     iosIcon: mailOutline,
     mdIcon: mailSharp,
   },
   {
     title: 'Outbox',
-    url: '/folder/Outbox',
+    url: '/tabs/Outbox',
     iosIcon: paperPlaneOutline,
     mdIcon: paperPlaneSharp,
   },
   {
     title: 'Favorites',
-    url: '/folder/Favorites',
+    url: '/tabs/Favorites',
     iosIcon: heartOutline,
     mdIcon: heartSharp,
   },
   {
     title: 'Archived',
-    url: '/folder/Archived',
+    url: '/tabs/Archived',
     iosIcon: archiveOutline,
     mdIcon: archiveSharp,
   },
   {
     title: 'Trash',
-    url: '/folder/Trash',
+    url: '/tabs/Trash',
     iosIcon: trashOutline,
     mdIcon: trashSharp,
   },
   {
     title: 'Spam',
-    url: '/folder/Spam',
+    url: '/tabs/Spam',
     iosIcon: warningOutline,
     mdIcon: warningSharp,
   },
 ];
-const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+const labels = ['Desenvolvido', 'por', 'Elton', 'pra', 'Ezoom'];
 
 const path = window.location.pathname.split('folder/')[1];
 if (path !== undefined) {
